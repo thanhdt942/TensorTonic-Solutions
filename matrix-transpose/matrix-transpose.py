@@ -9,4 +9,5 @@ def matrix_transpose(A):
 
     # return A.T
     # return A.transpose()
-    return np.transpose(A)
+    # return np.transpose(A)
+    return np.einsum('ij->ji', A)
